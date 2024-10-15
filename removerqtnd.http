@@ -1,0 +1,1 @@
+PUT http://localhost:8080/produtos/remover/670e96191999126ca6fb7451?quantidade=5

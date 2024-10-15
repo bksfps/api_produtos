@@ -1,0 +1,7 @@
+POST http://localhost:8080/usuarios/cadastrar
+Content-Type: application/json
+
+{
+  "username": "Rino",
+  "senha": "12345"
+}

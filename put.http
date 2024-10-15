@@ -1,0 +1,2 @@
+PUT http://localhost:8080/produtos/670e96191999126ca6fb7451/preco?novoPreco=99.99
+
