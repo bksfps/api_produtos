@@ -2,6 +2,8 @@ POST http://localhost:8080/usuarios/cadastrar
 Content-Type: application/json
 
 {
-  "username": "Rino",
-  "senha": "12345"
+  "username": "Careca",
+  "email": "careca@gmail.com",
+  "telefone": "119287392",
+  "senha": "123456"
 }

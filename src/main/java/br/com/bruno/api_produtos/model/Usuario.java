@@ -14,5 +14,7 @@ public class Usuario {
     private String id; // ID do usuário
 
     private String username; // Nome de usuário
+    private String email;
+    private String telefone;
     private String senha; // Senha
 }
