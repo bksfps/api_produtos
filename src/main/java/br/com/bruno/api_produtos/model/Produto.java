@@ -15,6 +15,7 @@ public class Produto {
 
     private String nome;
     private double preco;
+    private String descricao;
     private int quantidadeEmEstoque = 1;
     private String imagemUrl;
 }
