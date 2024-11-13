@@ -13,8 +13,9 @@ public class Usuario {
     @Id
     private String id; // ID do usuário
 
-    private String username; // Nome de usuário
+    private String username;
+    private String cpf;// Nome de usuário
     private String email;
-    private String telefone;
+    private String phone;
     private String senha; // Senha
 }

@@ -1,0 +1,2 @@
+PUT http://localhost:8080/produtos/6712d480417cb77289d59880/descricao?novaDescricao=Rodas%20de%20liga%20leve%20aro%2017
+

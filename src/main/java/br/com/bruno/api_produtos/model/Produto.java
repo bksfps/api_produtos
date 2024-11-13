@@ -18,4 +18,5 @@ public class Produto {
     private String descricao;
     private int quantidadeEmEstoque = 1;
     private String imagemUrl;
+    private String categoria;
 }

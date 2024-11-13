@@ -2,10 +2,10 @@ POST http://localhost:8080/produtos
 Content-Type: application/json
 
 {
-  "nome": "Volante",
-  "preco": 55,
-  "descricao": "uma breve descrição",
-  "quantidadeEmEstoque": 20,
-  "imagemUrl": "/images/volante.png"
-
+  "nome": "Limpador",
+  "preco": 79.99,
+  "descricao": "Limpador de parabrisa",
+  "quantidadeEmEstoque": 2,
+  "imagemUrl": "/images/limpador.png",
+  "categoria": ""
 }

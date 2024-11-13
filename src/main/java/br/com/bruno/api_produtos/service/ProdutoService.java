@@ -13,20 +13,17 @@ public class ProdutoService {
     private ProdutoRepository produtoRepository;
 
     public Produto salvar(Produto produto) {
-        // Verifica se já existe um produto com o mesmo nome
         Produto produtoExistente = produtoRepository.findByNome(produto.getNome());
-
         if (produtoExistente != null) {
-            // Se o produto já existe, incrementa a quantidade
             produtoExistente.setQuantidadeEmEstoque(
                     produtoExistente.getQuantidadeEmEstoque() + produto.getQuantidadeEmEstoque()
             );
             return produtoRepository.save(produtoExistente);
         } else {
-            // Caso contrário, cria um novo produto
             return produtoRepository.save(produto);
         }
     }
+
 
 
     public List<Produto> listar() {
@@ -64,5 +61,20 @@ public class ProdutoService {
         return produtoRepository.save(produto);
     }
 
-    // Outros métodos conforme necessário
+    public Produto atualizarCategoria(String id, String novaCategoria) {
+        Produto produto = produtoRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Produto não encontrado"));
+
+        produto.setCategoria(novaCategoria);
+        return produtoRepository.save(produto);
+    }
+
+    public Produto atualizarDescricao(String id, String novaDescricao) {
+        Produto produto = produtoRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Produto não encontrado"));
+
+        produto.setDescricao(novaDescricao); // Atualiza a descrição
+        return produtoRepository.save(produto); // Salva o produto atualizado
+    }
+
 }

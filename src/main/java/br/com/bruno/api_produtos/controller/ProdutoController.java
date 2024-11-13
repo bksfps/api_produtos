@@ -43,5 +43,16 @@ public class ProdutoController {
         return produtoService.atualizarPreco(id, novoPreco);
     }
 
+    @PutMapping("/{id}/categoria")
+    public Produto atualizarCategoria(@PathVariable String id, @RequestParam String novaCategoria) {
+        return produtoService.atualizarCategoria(id, novaCategoria);
+    }
+
+    @PutMapping("/{id}/descricao")
+    public Produto atualizarDescricao(@PathVariable String id, @RequestParam String novaDescricao) {
+        return produtoService.atualizarDescricao(id, novaDescricao);
+    }
+
+
     // Outros métodos conforme necessário
 }

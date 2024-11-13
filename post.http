@@ -2,8 +2,9 @@ POST http://localhost:8080/usuarios/cadastrar
 Content-Type: application/json
 
 {
-  "username": "Careca",
-  "email": "careca@gmail.com",
-  "telefone": "119287392",
+  "username": "aaaa",
+  "email": "casdca@gmail.com",
+  "cpf": "1234567",
+  "telefone": "119237392",
   "senha": "123456"
 }
